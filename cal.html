@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cal.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+    <h1>    CALCULATOR</h1>
+    <div class="cal">
+        <input type="text" id="result" onkeyup="numbersAdd(this)" placeholder="Enter value">
+        
+    <table>
+        <tr>
+            <td><button onclick="addNumber('1')">1</button></td>
+            <td><button onclick="addNumber('2')">2</button></td>
+            <td><button  onclick="addNumber('3')">3</button></td>
+            <td><button onclick="addNumber('+')">+</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="addNumber('4')">4</button></td>
+            <td><button onclick="addNumber('5')">5</button></td>
+            <td><button onclick="addNumber('6')">6</button></td>
+            <td><button onclick="addNumber('-')"> -</button></td>
+        </tr>
+        <tr>
+
+            <td><button onclick="addNumber('7')">7</button></td>
+            <td><button onclick="addNumber('8')">8</button></td>
+            <td><button onclick="addNumber('9')">9</button></td>
+            <td><button onclick="addNumber('*')">*</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="addNumber('/')">/</button></td>
+            <td><button onclick="addNumber('0')">0</button></td>
+            <td><button onclick="addNumber('.')">.</button></td>
+            <td><button onclick="equal()">=</button></td>
+        
+        </tr>
+    </table>
+    <button class="but" onclick="addNumber('clear')">clear</button>
+   
+    
+</div>
+</div>
+<script src="cal.js"></script>
+    
+</body>
+</html>
